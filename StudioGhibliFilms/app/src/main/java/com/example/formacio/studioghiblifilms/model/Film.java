@@ -14,8 +14,8 @@ public class Film implements Parcelable {
     private String description;
     private String director;
     private String producer;
-    private String releaseDate;
-    private String rtScore;
+    private String release_date;
+    private String rt_score;
     private List<String> people = null;
     private List<String> species = null;
     private List<String> locations = null;
@@ -70,20 +70,20 @@ public class Film implements Parcelable {
         this.producer = producer;
     }
 
-    public String getReleaseDate() {
-        return releaseDate;
+    public String getRelease_date() {
+        return release_date;
     }
 
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setRelease_date(String release_date) {
+        this.release_date = release_date;
     }
 
-    public String getRtScore() {
-        return rtScore;
+    public String getRt_score() {
+        return rt_score;
     }
 
-    public void setRtScore(String rtScore) {
-        this.rtScore = rtScore;
+    public void setRt_score(String rt_score) {
+        this.rt_score = rt_score;
     }
 
     public List<String> getPeople() {
@@ -138,8 +138,8 @@ public class Film implements Parcelable {
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +
                 ", producer='" + producer + '\'' +
-                ", releaseDate='" + releaseDate + '\'' +
-                ", rtScore='" + rtScore + '\'' +
+                ", release_date='" + release_date + '\'' +
+                ", rt_score='" + rt_score + '\'' +
                 '}';
     }
 
@@ -156,8 +156,8 @@ public class Film implements Parcelable {
         dest.writeString(this.description);
         dest.writeString(this.director);
         dest.writeString(this.producer);
-        dest.writeString(this.releaseDate);
-        dest.writeString(this.rtScore);
+        dest.writeString(this.release_date);
+        dest.writeString(this.rt_score);
         dest.writeStringList(this.people);
         dest.writeStringList(this.species);
         dest.writeStringList(this.locations);
@@ -175,8 +175,8 @@ public class Film implements Parcelable {
         this.description = in.readString();
         this.director = in.readString();
         this.producer = in.readString();
-        this.releaseDate = in.readString();
-        this.rtScore = in.readString();
+        this.release_date = in.readString();
+        this.rt_score = in.readString();
         this.people = in.createStringArrayList();
         this.species = in.createStringArrayList();
         this.locations = in.createStringArrayList();

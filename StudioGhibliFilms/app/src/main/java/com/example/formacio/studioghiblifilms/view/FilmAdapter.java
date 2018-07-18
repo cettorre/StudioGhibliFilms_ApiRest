@@ -42,7 +42,7 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         final Film film = mItems.get(position);
         holder.tvName.setText(film.getTitle());
-        holder.tvYear.setText(String.valueOf(film.getReleaseDate()));
+        holder.tvYear.setText(String.valueOf(film.getRelease_date()));
     //    holder.imageView.setImageResource(R.drawable.unlike);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
